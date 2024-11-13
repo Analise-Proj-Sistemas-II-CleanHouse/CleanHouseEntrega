@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, hsl(197, 85%, 43%),  hsl(197, 85%, 43%));
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-container {
+    flex: 2;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    
+    
+    margin: 0;
+    color:#000000;
+    font-size: 28px;
+    text-align: center;
+    margin-top:-80px
+    
+    
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: none; /* Remove a borda */
+    border-radius: 8px;
+    box-shadow: none; /* Remove o efeito de sombra interna */
+    font-size: 16px;
+}
+
+input:focus {
+    border: none; /* Remove a borda no foco também */
+    outline: none; /* Remove o contorno no foco */
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.2); /* Adiciona um efeito de foco */
+}
+
+
+#Entrar {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #268cf8;
+}
+
+.forgot-password {
+    display: block;
+    margin: 15px 0;
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    flex: 3;
+    background: #00a2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.logo {
+    max-width: 120%;
+    height: auto;
+}
+
+.stacked-text {
+    position: relative;
+    display: inline-block;
+}
+
+.stacked-text .word1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.stacked-text .word2 {
+    position: absolute;
+    top: 30px; /* Ajuste vertical */
+    left: 20px; /* Ajuste horizontal para desalinhar */
+}
