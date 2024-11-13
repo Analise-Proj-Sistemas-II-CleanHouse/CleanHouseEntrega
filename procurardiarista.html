@@ -1,0 +1,2355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre Diaristas</title>
+    <link rel="stylesheet" href="ProcurarDiarista.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Encontre Diaristas</div>
+        <nav>
+            <a href="TELAINICIO.html">Início</a>
+        </nav>
+    </header>
+
+    <!-- Filtro de região -->
+    <section class="filtro-regiao">
+        <label for="regionSelect">Escolha a região:</label>
+        <select id="regionSelect">
+            <option value="all">Todas</option>
+            <option value="zona-leste">Zona Leste</option>
+            <option value="zona-oeste">Zona Oeste</option>
+            <option value="centro-oeste">Centro-Oeste</option>
+            <option value="zona-sul">Zona Sul</option>
+            <option value="zona-norte">Zona Norte</option>
+        </select>
+    </section>
+
+    <main>
+        <section id="zona-leste" class="diaristas-section">
+            <h2>Diaristas na Zona Leste</h2>
+            <div class="diaristas-grid">
+                <div class="diarista-card">
+                    <img src="https://via.placeholder.com/250x150" alt="Foto Diarista">
+                    <div class="diarista-info">
+                        <h3>Maria Silva</h3>
+                        <p>Avaliação: ★★★★☆</p>
+                        <p>Zona Leste</p>
+                        <div class="precos">
+                            <p>Quarto: R$40</p>
+                            <p>Sala: R$30</p>
+                            <p>Cozinha: R$35</p>
+                            <p>Banheiro: R$20</p>
+                        </div>
+                        <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form" id="comodidadesForm">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <!-- Botão para contratar com valor calculado -->
+                        <a href="#" class="contratar-btn" onclick="calcularTotal()">Contratar - R$0,00</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+        <main>
+            <section id="zona-leste" class="diaristas-section">
+                <h2>Diaristas na Zona Leste</h2>
+                <div class="diaristas-grid">
+                    <div class="diarista-card">
+                        <img src="https://via.placeholder.com/250x150" alt="Foto Diarista">
+                        <div class="diarista-info">
+                            <h3>Maria Silva</h3>
+                            <p>Avaliação: ★★★★☆</p>
+                            <p>Zona Leste</p>
+                            <div class="precos">
+                                <p>Quarto: R$40</p>
+                                <p>Sala: R$30</p>
+                                <p>Cozinha: R$35</p>
+                                <p>Banheiro: R$20</p>
+                            </div>
+
+                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                          
+
+                        </div>
+                    </div>
+                    <!-- Adicione mais diaristas na Zona Leste -->
+                </div>
+            </section>
+
+            <main>
+                <section id="zona-leste" class="diaristas-section">
+                    <h2>Diaristas na Zona Leste</h2>
+                    <div class="diaristas-grid">
+                        <div class="diarista-card">
+                            <img src="https://via.placeholder.com/250x150" alt="Foto Diarista">
+                            <div class="diarista-info">
+                                <h3>Maria Silva</h3>
+                                <p>Avaliação: ★★★★☆</p>
+                                <p>Zona Leste</p>
+                                <div class="precos">
+                                    <p>Quarto: R$40</p>
+                                    <p>Sala: R$30</p>
+                                    <p>Cozinha: R$35</p>
+                                    <p>Banheiro: R$20</p>
+                                </div>
+                                <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                            </div>
+                        </div>
+                        <!-- Adicione mais diaristas na Zona Leste -->
+                    </div>
+                </section>
+
+                <main>
+                    <section id="zona-leste" class="diaristas-section">
+                        <h2>Diaristas na Zona Leste</h2>
+                        <div class="diaristas-grid">
+                            <div class="diarista-card">
+                                <img src="https://via.placeholder.com/250x150" alt="Foto Diarista">
+                                <div class="diarista-info">
+                                    <h3>Maria Silva</h3>
+                                    <p>Avaliação: ★★★★☆</p>
+                                    <p>Zona Leste</p>
+                                    <div class="precos">
+                                        <p>Quarto: R$40</p>
+                                        <p>Sala: R$30</p>
+                                        <p>Cozinha: R$35</p>
+                                        <p>Banheiro: R$20</p>
+                                    </div>
+                                    <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                </div>
+                            </div>
+                            <!-- Adicione mais diaristas na Zona Leste -->
+                        </div>
+                    </section>
+
+                    <main>
+                        <section id="zona-leste" class="diaristas-section">
+                            <h2>Diaristas na Zona Leste</h2>
+                            <div class="diaristas-grid">
+                                <div class="diarista-card">
+                                    <img src="https://via.placeholder.com/250x150" alt="Foto Diarista">
+                                    <div class="diarista-info">
+                                        <h3>Maria Silva</h3>
+                                        <p>Avaliação: ★★★★☆</p>
+                                        <p>Zona Leste</p>
+                                        <div class="precos">
+                                            <p>Quarto: R$40</p>
+                                            <p>Sala: R$30</p>
+                                            <p>Cozinha: R$35</p>
+                                            <p>Banheiro: R$20</p>
+                                        </div>
+                                       <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                    </div>
+                                </div>
+                                <!-- Adicione mais diaristas na Zona Leste -->
+                            </div>
+                        </section>
+
+                        <main>
+                            <section id="zona-leste" class="diaristas-section">
+                                <h2>Diaristas na Zona Leste</h2>
+                                <div class="diaristas-grid">
+                                    <div class="diarista-card">
+                                        <img src="https://via.placeholder.com/250x150" alt="Foto Diarista">
+                                        <div class="diarista-info">
+                                            <h3>Maria Silva</h3>
+                                            <p>Avaliação: ★★★★☆</p>
+                                            <p>Zona Leste</p>
+                                            <div class="precos">
+                                                <p>Quarto: R$40</p>
+                                                <p>Sala: R$30</p>
+                                                <p>Cozinha: R$35</p>
+                                                <p>Banheiro: R$20</p>
+                                            </div>
+                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                        </div>
+                                    </div>
+                                    <!-- Adicione mais diaristas na Zona Leste -->
+                                </div>
+                            </section>
+
+                            <main>
+                                <section id="zona-leste" class="diaristas-section">
+                                    <h2>Diaristas na Zona Leste</h2>
+                                    <div class="diaristas-grid">
+                                        <div class="diarista-card">
+                                            <img src="https://via.placeholder.com/250x150" alt="Foto Diarista">
+                                            <div class="diarista-info">
+                                                <h3>Maria Silva</h3>
+                                                <p>Avaliação: ★★★★☆</p>
+                                                <p>Zona Leste</p>
+                                                <div class="precos">
+                                                    <p>Quarto: R$40</p>
+                                                    <p>Sala: R$30</p>
+                                                    <p>Cozinha: R$35</p>
+                                                    <p>Banheiro: R$20</p>
+                                                </div>
+                                               <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                            </div>
+                                        </div>
+                                        <!-- Adicione mais diaristas na Zona Leste -->
+                                    </div>
+                                </section>
+
+                                <main>
+                                    <section id="zona-leste" class="diaristas-section">
+                                        <h2>Diaristas na Zona Leste</h2>
+                                        <div class="diaristas-grid">
+                                            <div class="diarista-card">
+                                                <img src="https://via.placeholder.com/250x150" alt="Foto Diarista">
+                                                <div class="diarista-info">
+                                                    <h3>Maria Silva</h3>
+                                                    <p>Avaliação: ★★★★☆</p>
+                                                    <p>Zona Leste</p>
+                                                    <div class="precos">
+                                                        <p>Quarto: R$40</p>
+                                                        <p>Sala: R$30</p>
+                                                        <p>Cozinha: R$35</p>
+                                                        <p>Banheiro: R$20</p>
+                                                    </div>
+                                                    <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                </div>
+                                            </div>
+                                            <!-- Adicione mais diaristas na Zona Leste -->
+                                        </div>
+                                    </section>
+
+                                    <main>
+                                        <section id="zona-leste" class="diaristas-section">
+                                            <h2>Diaristas na Zona Leste</h2>
+                                            <div class="diaristas-grid">
+                                                <div class="diarista-card">
+                                                    <img src="https://via.placeholder.com/250x150" alt="Foto Diarista">
+                                                    <div class="diarista-info">
+                                                        <h3>Maria Silva</h3>
+                                                        <p>Avaliação: ★★★★☆</p>
+                                                        <p>Zona Leste</p>
+                                                        <div class="precos">
+                                                            <p>Quarto: R$40</p>
+                                                            <p>Sala: R$30</p>
+                                                            <p>Cozinha: R$35</p>
+                                                            <p>Banheiro: R$20</p>
+                                                        </div>
+                                                      <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                    </div>
+                                                </div>
+                                                <!-- Adicione mais diaristas na Zona Leste -->
+                                            </div>
+                                        </section>
+
+                                        <main>
+                                            <section id="zona-leste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Leste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Maria Silva</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Leste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Leste -->
+                                                </div>
+                                            </section>
+
+
+                                            <section id="zona-oeste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>João Santos</h3>
+                                                            <p>Avaliação: ★★★☆☆</p>
+                                                            <p>Zona Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$45</p>
+                                                                <p>Sala: R$35</p>
+                                                                <p>Cozinha: R$40</p>
+                                                                <p>Banheiro: R$25</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-oeste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>João Santos</h3>
+                                                            <p>Avaliação: ★★★☆☆</p>
+                                                            <p>Zona Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$45</p>
+                                                                <p>Sala: R$35</p>
+                                                                <p>Cozinha: R$40</p>
+                                                                <p>Banheiro: R$25</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-oeste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>João Santos</h3>
+                                                            <p>Avaliação: ★★★☆☆</p>
+                                                            <p>Zona Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$45</p>
+                                                                <p>Sala: R$35</p>
+                                                                <p>Cozinha: R$40</p>
+                                                                <p>Banheiro: R$25</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-oeste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>João Santos</h3>
+                                                            <p>Avaliação: ★★★☆☆</p>
+                                                            <p>Zona Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$45</p>
+                                                                <p>Sala: R$35</p>
+                                                                <p>Cozinha: R$40</p>
+                                                                <p>Banheiro: R$25</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-oeste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>João Santos</h3>
+                                                            <p>Avaliação: ★★★☆☆</p>
+                                                            <p>Zona Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$45</p>
+                                                                <p>Sala: R$35</p>
+                                                                <p>Cozinha: R$40</p>
+                                                                <p>Banheiro: R$25</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-oeste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>João Santos</h3>
+                                                            <p>Avaliação: ★★★☆☆</p>
+                                                            <p>Zona Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$45</p>
+                                                                <p>Sala: R$35</p>
+                                                                <p>Cozinha: R$40</p>
+                                                                <p>Banheiro: R$25</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-oeste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>João Santos</h3>
+                                                            <p>Avaliação: ★★★☆☆</p>
+                                                            <p>Zona Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$45</p>
+                                                                <p>Sala: R$35</p>
+                                                                <p>Cozinha: R$40</p>
+                                                                <p>Banheiro: R$25</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-oeste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>João Santos</h3>
+                                                            <p>Avaliação: ★★★☆☆</p>
+                                                            <p>Zona Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$45</p>
+                                                                <p>Sala: R$35</p>
+                                                                <p>Cozinha: R$40</p>
+                                                                <p>Banheiro: R$25</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-oeste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>João Santos</h3>
+                                                            <p>Avaliação: ★★★☆☆</p>
+                                                            <p>Zona Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$45</p>
+                                                                <p>Sala: R$35</p>
+                                                                <p>Cozinha: R$40</p>
+                                                                <p>Banheiro: R$25</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-oeste" class="diaristas-section">
+                                                <h2>Diaristas na Zona Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>João Santos</h3>
+                                                            <p>Avaliação: ★★★☆☆</p>
+                                                            <p>Zona Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$45</p>
+                                                                <p>Sala: R$35</p>
+                                                                <p>Cozinha: R$40</p>
+                                                                <p>Banheiro: R$25</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="centro-oeste" class="diaristas-section">
+                                                <h2>Diaristas no Centro-Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Fernanda Lima</h3>
+                                                            <p>Avaliação: ★★★★★</p>
+                                                            <p>Centro-Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$50</p>
+                                                                <p>Sala: R$40</p>
+                                                                <p>Cozinha: R$45</p>
+                                                                <p>Banheiro: R$30</p>
+                                                            </div>
+                                                          <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas no Centro-Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="centro-oeste" class="diaristas-section">
+                                                <h2>Diaristas no Centro-Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Fernanda Lima</h3>
+                                                            <p>Avaliação: ★★★★★</p>
+                                                            <p>Centro-Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$50</p>
+                                                                <p>Sala: R$40</p>
+                                                                <p>Cozinha: R$45</p>
+                                                                <p>Banheiro: R$30</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas no Centro-Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="centro-oeste" class="diaristas-section">
+                                                <h2>Diaristas no Centro-Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Fernanda Lima</h3>
+                                                            <p>Avaliação: ★★★★★</p>
+                                                            <p>Centro-Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$50</p>
+                                                                <p>Sala: R$40</p>
+                                                                <p>Cozinha: R$45</p>
+                                                                <p>Banheiro: R$30</p>
+                                                            </div>
+                                                          <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas no Centro-Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="centro-oeste" class="diaristas-section">
+                                                <h2>Diaristas no Centro-Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Fernanda Lima</h3>
+                                                            <p>Avaliação: ★★★★★</p>
+                                                            <p>Centro-Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$50</p>
+                                                                <p>Sala: R$40</p>
+                                                                <p>Cozinha: R$45</p>
+                                                                <p>Banheiro: R$30</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas no Centro-Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="centro-oeste" class="diaristas-section">
+                                                <h2>Diaristas no Centro-Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Fernanda Lima</h3>
+                                                            <p>Avaliação: ★★★★★</p>
+                                                            <p>Centro-Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$50</p>
+                                                                <p>Sala: R$40</p>
+                                                                <p>Cozinha: R$45</p>
+                                                                <p>Banheiro: R$30</p>
+                                                            </div>
+                                                         <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas no Centro-Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="centro-oeste" class="diaristas-section">
+                                                <h2>Diaristas no Centro-Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Fernanda Lima</h3>
+                                                            <p>Avaliação: ★★★★★</p>
+                                                            <p>Centro-Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$50</p>
+                                                                <p>Sala: R$40</p>
+                                                                <p>Cozinha: R$45</p>
+                                                                <p>Banheiro: R$30</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas no Centro-Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="centro-oeste" class="diaristas-section">
+                                                <h2>Diaristas no Centro-Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Fernanda Lima</h3>
+                                                            <p>Avaliação: ★★★★★</p>
+                                                            <p>Centro-Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$50</p>
+                                                                <p>Sala: R$40</p>
+                                                                <p>Cozinha: R$45</p>
+                                                                <p>Banheiro: R$30</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas no Centro-Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="centro-oeste" class="diaristas-section">
+                                                <h2>Diaristas no Centro-Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Fernanda Lima</h3>
+                                                            <p>Avaliação: ★★★★★</p>
+                                                            <p>Centro-Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$50</p>
+                                                                <p>Sala: R$40</p>
+                                                                <p>Cozinha: R$45</p>
+                                                                <p>Banheiro: R$30</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas no Centro-Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="centro-oeste" class="diaristas-section">
+                                                <h2>Diaristas no Centro-Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Fernanda Lima</h3>
+                                                            <p>Avaliação: ★★★★★</p>
+                                                            <p>Centro-Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$50</p>
+                                                                <p>Sala: R$40</p>
+                                                                <p>Cozinha: R$45</p>
+                                                                <p>Banheiro: R$30</p>
+                                                            </div>
+                                                          <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas no Centro-Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="centro-oeste" class="diaristas-section">
+                                                <h2>Diaristas no Centro-Oeste</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Fernanda Lima</h3>
+                                                            <p>Avaliação: ★★★★★</p>
+                                                            <p>Centro-Oeste</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$50</p>
+                                                                <p>Sala: R$40</p>
+                                                                <p>Cozinha: R$45</p>
+                                                                <p>Banheiro: R$30</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas no Centro-Oeste -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-sul" class="diaristas-section">
+                                                <h2>Diaristas na Zona Sul</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Lucia Rocha</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Sul</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$60</p>
+                                                                <p>Sala: R$45</p>
+                                                                <p>Cozinha: R$50</p>
+                                                                <p>Banheiro: R$35</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Sul -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-sul" class="diaristas-section">
+                                                <h2>Diaristas na Zona Sul</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Lucia Rocha</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Sul</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$60</p>
+                                                                <p>Sala: R$45</p>
+                                                                <p>Cozinha: R$50</p>
+                                                                <p>Banheiro: R$35</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Sul -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-sul" class="diaristas-section">
+                                                <h2>Diaristas na Zona Sul</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Lucia Rocha</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Sul</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$60</p>
+                                                                <p>Sala: R$45</p>
+                                                                <p>Cozinha: R$50</p>
+                                                                <p>Banheiro: R$35</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Sul -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-sul" class="diaristas-section">
+                                                <h2>Diaristas na Zona Sul</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Lucia Rocha</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Sul</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$60</p>
+                                                                <p>Sala: R$45</p>
+                                                                <p>Cozinha: R$50</p>
+                                                                <p>Banheiro: R$35</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Sul -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-sul" class="diaristas-section">
+                                                <h2>Diaristas na Zona Sul</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Lucia Rocha</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Sul</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$60</p>
+                                                                <p>Sala: R$45</p>
+                                                                <p>Cozinha: R$50</p>
+                                                                <p>Banheiro: R$35</p>
+                                                            </div>
+                                                          <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Sul -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-sul" class="diaristas-section">
+                                                <h2>Diaristas na Zona Sul</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Lucia Rocha</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Sul</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$60</p>
+                                                                <p>Sala: R$45</p>
+                                                                <p>Cozinha: R$50</p>
+                                                                <p>Banheiro: R$35</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Sul -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-sul" class="diaristas-section">
+                                                <h2>Diaristas na Zona Sul</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Lucia Rocha</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Sul</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$60</p>
+                                                                <p>Sala: R$45</p>
+                                                                <p>Cozinha: R$50</p>
+                                                                <p>Banheiro: R$35</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Sul -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-sul" class="diaristas-section">
+                                                <h2>Diaristas na Zona Sul</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Lucia Rocha</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Sul</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$60</p>
+                                                                <p>Sala: R$45</p>
+                                                                <p>Cozinha: R$50</p>
+                                                                <p>Banheiro: R$35</p>
+                                                            </div>
+                                                         <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Sul -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-sul" class="diaristas-section">
+                                                <h2>Diaristas na Zona Sul</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Lucia Rocha</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Sul</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$60</p>
+                                                                <p>Sala: R$45</p>
+                                                                <p>Cozinha: R$50</p>
+                                                                <p>Banheiro: R$35</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Sul -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-sul" class="diaristas-section">
+                                                <h2>Diaristas na Zona Sul</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Lucia Rocha</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Sul</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$60</p>
+                                                                <p>Sala: R$45</p>
+                                                                <p>Cozinha: R$50</p>
+                                                                <p>Banheiro: R$35</p>
+                                                            </div>
+                                                          <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Sul -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-norte" class="diaristas-section">
+                                                <h2>Diaristas na Zona Norte</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Carlos Almeida</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Norte</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Norte -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-norte" class="diaristas-section">
+                                                <h2>Diaristas na Zona Norte</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Carlos Almeida</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Norte</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                         <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Norte -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-norte" class="diaristas-section">
+                                                <h2>Diaristas na Zona Norte</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Carlos Almeida</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Norte</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                         <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Norte -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-norte" class="diaristas-section">
+                                                <h2>Diaristas na Zona Norte</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Carlos Almeida</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Norte</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Norte -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-norte" class="diaristas-section">
+                                                <h2>Diaristas na Zona Norte</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Carlos Almeida</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Norte</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Norte -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-norte" class="diaristas-section">
+                                                <h2>Diaristas na Zona Norte</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Carlos Almeida</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Norte</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                          <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Norte -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-norte" class="diaristas-section">
+                                                <h2>Diaristas na Zona Norte</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Carlos Almeida</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Norte</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Norte -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-norte" class="diaristas-section">
+                                                <h2>Diaristas na Zona Norte</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Carlos Almeida</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Norte</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Norte -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-norte" class="diaristas-section">
+                                                <h2>Diaristas na Zona Norte</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Carlos Almeida</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Norte</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                            <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Norte -->
+                                                </div>
+                                            </section>
+
+                                            <section id="zona-norte" class="diaristas-section">
+                                                <h2>Diaristas na Zona Norte</h2>
+                                                <div class="diaristas-grid">
+                                                    <div class="diarista-card">
+                                                        <img src="https://via.placeholder.com/250x150"
+                                                            alt="Foto Diarista">
+                                                        <div class="diarista-info">
+                                                            <h3>Carlos Almeida</h3>
+                                                            <p>Avaliação: ★★★★☆</p>
+                                                            <p>Zona Norte</p>
+                                                            <div class="precos">
+                                                                <p>Quarto: R$40</p>
+                                                                <p>Sala: R$30</p>
+                                                                <p>Cozinha: R$35</p>
+                                                                <p>Banheiro: R$20</p>
+                                                            </div>
+                                                           <!-- Formulário de seleção de cômodos com quantidade -->
+                        <form class="comodidades-form">
+                            <p>Selecione os cômodos e a quantidade que deseja limpar:</p>
+                            <label>
+                                Quarto - R$40
+                                <input type="number" name="quarto" min="0" value="0" data-preco="40"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Sala - R$30
+                                <input type="number" name="sala" min="0" value="0" data-preco="30"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Cozinha - R$35
+                                <input type="number" name="cozinha" min="0" value="0" data-preco="35"> vezes
+                            </label>
+                            <br>
+                            <label>
+                                Banheiro - R$20
+                                <input type="number" name="banheiro" min="0" value="0" data-preco="20"> vezes
+                            </label>
+                        </form>
+                        <a href="TelaPagamento.html" class="contratar-btn">Contratar - R$0,00</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Adicione mais diaristas na Zona Norte -->
+                                                </div>
+                                            </section>
+
+                                        </main>
+
+                                        <!-- Rodapé -->
+                                        <footer>
+                                            <p>&copy; 2024 Encontre Diaristas - Todos os direitos reservados</p>
+                                            <div class="social">
+                                                <a href="#">Facebook</a> |
+                                                <a href="#">Instagram</a> |
+                                                <a href="#">Twitter</a>
+                                            </div>
+                                        </footer>
+
+                                        <script src="ProcurarDiarista.js"></script>
+</body>
+
+</html>

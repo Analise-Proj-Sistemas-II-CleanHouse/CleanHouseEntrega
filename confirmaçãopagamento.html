@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Pagamento</title>
+    <link rel="stylesheet" href="TelaPagamento.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pagamento Confirmado</h2>
+        <p>Seu pagamento foi realizado com sucesso!</p>
+        <p>Obrigado <span id="userName">Nome do Usuário</span>, por escolher nossa plataforma.</p>
+
+        <p><a href="TELAINICIO.html">Inicio</a></p>
+    </div>
+
+    <script>
+        // Simula a inserção do nome do usuário e método de pagamento
+        document.getElementById("userName").textContent = localStorage.getItem("userName");
+    </script>
+</body>
+</html>

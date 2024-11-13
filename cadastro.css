@@ -1,0 +1,76 @@
+/* Arquivo: styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: hsl(197, 85%, 43%);
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px; /* Ajustado para melhor responsividade */
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Tamanho fixo para melhor controle */
+    width: 90%; /* Responsivo para telas menores */
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #555;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"] {
+    width: 100%;
+    padding: 10px; 
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="number"]:focus, input[type="password"]:focus {
+    border-color: #007BFF;
+}
+
+p{
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalho */
+.header {
+  width: 100%;
+  background-color:  hsl(197, 85%, 43%);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-message h1 {
+  font-size: 1.5em;
+}
+.header-options button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Conteúdo Principal */
+.main-content {
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+.quick-schedule {
+  background-color: hsl(197, 85%, 43%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.quick-schedule button {
+  background-color: hsl(197, 85%, 43%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.quick-access {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Notificações */
+.notifications-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.notifications-section h2 {
+  margin-bottom: 10px;
+}
+.notifications-section ul {
+  list-style-type: none;
+  line-height: 1.6;
+}
+
+/* Rodapé */
+.footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Estilo das listas nos cards */
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.card ul li {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Efeito hover nos cards */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .header-options {
+    flex-direction: column;
+  }
+  .quick-access {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

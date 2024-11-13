@@ -1,0 +1,159 @@
+/* Reset básico */
+* { /* Aplica o reset para todos os elementos */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    box-sizing: border-box; /* Inclui padding e borda nas dimensões totais do elemento */
+}
+
+/* Estilos gerais */
+ /* Estilos para tornar o layout mais apresentável */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(197, 85%, 43%);
+    color:black;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    display: flex; /* Usa flexbox para o layout do cabeçalho */
+    justify-content: space-between; /* Espaça os elementos do cabeçalho uniformemente */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    padding: 20px; /* Adiciona espaçamento interno ao cabeçalho */
+    background: linear-gradient(135deg, hsl(197, 65%, 62%),hsl(197, 65%, 62%)); /* Aplica um gradiente no fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+}
+
+header .logo {
+    font-size: 24px; /* Tamanho da fonte da logo */
+    font-weight: bold; /* Negrito para a logo */
+}
+
+header nav a {
+    color: white; /* Cor dos links de navegação */
+    margin: 0 10px; /* Margem horizontal entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Negrito nos links */
+}
+
+/* Filtro de região */
+.filtro-regiao {
+    padding: 20px; /* Espaçamento interno ao redor do filtro */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 20px; /* Margem superior */
+}
+
+.filtro-regiao label {
+    margin-right: 10px; /* Margem direita do label */
+    font-weight: bold; /* Texto em negrito no label */
+    color: #555; /* Cor do texto do label */
+}
+
+.filtro-regiao select {
+    padding: 8px; /* Espaçamento interno no campo de seleção */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Cor da borda do campo */
+}
+
+.diaristas-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+
+.diaristas-section h2 {
+    margin-bottom: 20px; /* Margem inferior do título */
+    color: #333; /* Cor do título */
+    text-align: center; /* Centraliza o título */
+    font-size: 26px; /* Tamanho da fonte do título */
+    font-weight: bold; /* Negrito no título */
+}
+
+.diaristas-grid {
+    display: grid; /* Exibe o conteúdo em uma grade */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajusta colunas conforme o espaço disponível */
+    gap: 20px; /* Espaçamento entre os itens da grade */
+    justify-content: center; /* Centraliza a grade */
+}
+
+.diarista-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.diarista-card:hover {
+    transform: scale(1.05); /* Aumenta o cartão quando passa o mouse */
+}
+
+.diarista-card img {
+    width: 20%; /* Define a largura da imagem */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    border-bottom: 2px solid #e0e0e0; /* Borda inferior da imagem */
+}
+
+.diarista-info {
+    padding: 15px;
+    text-align: center;
+}
+.diarista-info h3 {
+    font-size: 18px; /* Tamanho da fonte do nome do diarista */
+    color: #333; /* Cor do texto do nome */
+    margin-bottom: 5px; /* Margem inferior do título */
+}
+
+.diarista-info p {
+    font-size: 14px; /* Tamanho da fonte das informações adicionais */
+    margin: 5px 0; /* Margem superior e inferior */
+    color: #777; /* Cor das informações adicionais */
+}
+
+.precos {
+    background-color: #f9f9f9; /* Fundo claro para a seção de preços */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-top: 10px; /* Margem superior */
+    font-size: 15px; /* Tamanho da fonte */
+}
+
+.precos p {
+    margin: 5px 0;
+    color: #444;
+}
+.contratar-btn {
+    background: linear-gradient(135deg, hsl(197, 65%, 62%), hsl(197, 65%, 62%));
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.contratar-btn:hover {
+    background: linear-gradient(135deg, hsl(197, 65%, 62%), hsl(197, 65%, 62%));
+}
+/* Rodapé */
+footer {
+    background-color: #333; /* Fundo escuro para o rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Padding interno superior e inferior */
+    font-size: 14px; /* Tamanho da fonte do rodapé */
+    margin-top: 40px; /* Margem superior */
+}
+
+footer .social a {
+    color: #fff; /* Cor dos links de redes sociais */
+    margin: 0 10px; /* Margem horizontal entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+

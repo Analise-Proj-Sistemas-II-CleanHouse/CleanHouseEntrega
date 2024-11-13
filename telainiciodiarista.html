@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel da Diarista - [Nome da Empresa]</title>
+  <link rel="stylesheet" href="TelaInicioDiarista.css">
+  <style>
+    /* Estilos Globais */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .header {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    /* Navegação */
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #0056b3;
+      padding: 10px;
+    }
+
+    .nav button {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .nav button:hover {
+      color: #f4f4f9;
+      text-decoration: underline;
+    }
+
+    /* Conteúdo Principal */
+    .main-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section-container {
+      display: none;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .section-container.active {
+      display: block;
+    }
+
+    .section-title {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 5px;
+    }
+
+    .button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Estilos específicos de listas */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+    ul li:last-child {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <div class="header">
+    <div class="profile">
+      <img src="perfil.jpg" alt="Foto da Diarista">
+      <span>Bem-vinda, [Nome da Diarista]</span>
+    </div>
+  </div>
+
+  <!-- Navegação -->
+  <div class="nav">
+    <button onclick="showSection('meuPerfil')">Meu Perfil</button>
+    <button onclick="showSection('avaliacoes')">Avaliações</button>
+    <button onclick="showSection('historicoPagamento')">Histórico de Pagamento</button>
+    <button onclick="showSection('agenda')">Agenda</button>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div class="main-content">
+    <!-- Seções Dinâmicas -->
+    <div id="meuPerfil" class="section-container active">
+      <h3 class="section-title">Meu Perfil</h3>
+      <p><strong>Nome:</strong> [Nome da Diarista]</p>
+      <p><strong>Email:</strong> [Email da Diarista]</p>
+      <p><strong>Telefone:</strong> [Telefone da Diarista]</p>
+      <button class="button" onclick="editProfile()">Editar Perfil</button>
+    </div>
+
+    <div id="avaliacoes" class="section-container">
+      <h3 class="section-title">Avaliações</h3>
+      <ul>
+        <li>Cliente: João - Avaliação: 5 estrelas - "Ótimo serviço!"</li>
+        <li>Cliente: Maria - Avaliação: 4 estrelas - "Muito boa, mas chegou um pouco atrasada."</li>
+      </ul>
+      <button class="button" onclick="viewAllReviews()">Ver Todas as Avaliações</button>
+    </div>
+
+    <div id="historicoPagamento" class="section-container">
+      <h3 class="section-title">Histórico de Pagamento</h3>
+      <ul>
+        <li>Data: 10 de Novembro - Valor: R$200</li>
+        <li>Data: 5 de Novembro - Valor: R$180</li>
+      </ul>
+      <button class="button" onclick="viewPaymentHistory()">Ver Histórico Completo</button>
+    </div>
+
+    <div id="agenda" class="section-container">
+      <h3 class="section-title">Agenda</h3>
+      <ul>
+        <li>Data: 15 de Novembro - Cliente: Ana - Local: Rua Exemplo, 123</li>
+        <li>Data: 20 de Novembro - Cliente: Pedro - Local: Avenida Central, 456</li>
+      </ul>
+      <button class="button" onclick="viewFullSchedule()">Ver Agenda Completa</button>
+    </div>
+  </div>
+
+  <!-- Scripts JavaScript -->
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section-container');
+      sections.forEach(section => section.classList.remove('active'));
+
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    function editProfile() {
+      alert("Funcionalidade de edição de perfil em breve.");
+    }
+
+    function viewAllReviews() {
+      alert("Funcionalidade para ver todas as avaliações em breve.");
+    }
+
+    function viewPaymentHistory() {
+      alert("Funcionalidade para ver o histórico completo de pagamentos em breve.");
+    }
+
+    function viewFullSchedule() {
+      alert("Funcionalidade para ver a agenda completa em breve.");
+    }
+  </script>
+
+</body>
+</html>

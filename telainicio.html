@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Início do Cliente</title>
+  <link rel="stylesheet" href="TelaInicio.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="welcome-message">
+      <h1>Bem-vindo, <span id="client-name">[Nome do Cliente]</span></h1>
+      <p>Encontre diaristas para ajudar no seu dia a dia!</p>
+    </div>
+    <div class="header-options">
+      <button class="notification-btn">🔔</button>
+      <button class="profile-btn">👤 Meu Perfil</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+    
+    <!-- Seção de Agendamento Rápido -->
+    <section class="quick-schedule">
+      <h2>Agende com uma Diarista</h2>
+      <a href="ProcurarDiarista.html" class="schedule-button">Agendar Agora</a>
+    </section>
+  
+    <!-- Cards de Acesso Rápido -->
+    <section class="quick-access">
+      <div class="card" onclick="window.location.href='TelaPagamento.html'">
+        <h3>Pagamento</h3>
+        <p>Efetue ou consulte seus pagamentos.</p>
+        <ul>
+          <li>Pagamento para diarista Ana - R$200,00 - Confirmado em 10/11/2024</li>
+          <li>Pagamento para diarista Clara - R$150,00 - Confirmado em 05/11/2024</li>
+          <li>Pagamento para diarista João - R$100,00 - Confirmado em 01/11/2024</li>
+        </ul>
+      </div>
+      <div class="card" onclick="window.location.href='TelaFeedback.html'">
+        <h3>Feedback</h3>
+        <p>Avalie o serviço das diaristas.</p>
+        <ul>
+          <li>Ana - "Ótimo serviço, muito detalhista!" - 10/11/2024</li>
+          <li>Clara - "Excelente, muito pontual." - 05/11/2024</li>
+          <li>João - "Serviço bom, mas pode melhorar." - 01/11/2024</li>
+        </ul>
+      </div>
+      <div class="card" onclick="window.location.href='TelaHistorico.html'">
+        <h3>Histórico</h3>
+        <p>Veja suas contratações anteriores.</p>
+        <ul>
+          <li>Diarista: Ana - Serviço de faxina - 10/11/2024</li>
+          <li>Diarista: Clara - Limpeza geral - 05/11/2024</li>
+          <li>Diarista: João - Lavagem de roupas - 01/11/2024</li>
+        </ul>
+      </div>
+      <div class="card" onclick="window.location.href='TelaDiaristas.html'">
+        <h3>Ver Diaristas</h3>
+        <p><a href="ProcurarDiarista.html" class="schedule-button">Encontre e contrate novas diaristas.</a></p>
+
+      
+      </div>
+    </section>
+
+    <!-- Seção de Notificações -->
+    <section class="notifications-section">
+      <h2>Notificações Recentes</h2>
+      <ul>
+        <li>Seu pagamento foi confirmado para a diarista Ana.</li>
+        <li>A diarista Clara concluiu o serviço.</li>
+        <li>Você recebeu uma nova avaliação para revisar.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>&copy; 2024 Contrate uma Diarista. Todos os direitos reservados.</p>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- Script para dados dinâmicos -->
+  <script>
+    document.getElementById("client-name").innerText = "João"; // Exemplo de nome dinâmico
+
+    // Simulação de notificações dinâmicas
+    const notifications = [
+      "Seu pagamento foi confirmado para a diarista Ana.",
+      "A diarista Clara concluiu o serviço.",
+      "Você recebeu uma nova avaliação para revisar."
+    ];
+    
+    const notificationList = document.querySelector(".notifications-section ul");
+    notifications.forEach(notification => {
+      let listItem = document.createElement("li");
+      listItem.textContent = notification;
+      notificationList.appendChild(listItem);
+    });
+  </script>
+
+  
+
+</body>
+</html>

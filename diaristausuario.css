@@ -1,0 +1,46 @@
+/* Configura a imagem de fundo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinha os containers na coluna */
+    height: 100vh;
+    margin: 0;
+    background-image: url('imagens/imagem1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.8);
+    
+}
+
+.container {
+    text-align: center;
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px #FFF;
+    margin: 20px; /* Espaço entre os containers */
+}
+
+h1 {
+    color: #FFF;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
